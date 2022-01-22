@@ -163,30 +163,13 @@ a {
   
 }
 
-h5 a:hover {
+footer>h5:hover a{
   transition: 0.3s all ease-in;
   color: black;
 }
 
-h5{
+footer>h5{
   text-align: center;
-}
-
-.contact {
-  font-size: 13px;
-  position: relative;
-  margin-left: 65rem;
-}
-
-.contact a {
-  transition:  0.4s all ease-in;
-  font-size: 17px;
-  font-weight: bolder;
-  }
-
-.contact a:hover {
-  transition: 0.3s all ease-in-out;
-  color: black;
 }
 
 @media (max-width: 548px) {
