@@ -140,7 +140,7 @@ a {
 
 .contact {
   font-size: 13px;
-  text-align: right;
+  text-align-last: right;
 }
 
 .contact a {
@@ -182,6 +182,6 @@ footer > h5 {
 
   footer > p.contact {
     position: relative;
-    text-align: right;
+    text-align-last: right;
   }
 }
