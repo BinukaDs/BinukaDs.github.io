@@ -163,7 +163,7 @@ a {
   transition: 0.3s all ease-in;
 }
 
-footer > h5:hover a {
+.footer_links:hover  {
   transition: 0.3s all ease-in;
   color: black;
 }
