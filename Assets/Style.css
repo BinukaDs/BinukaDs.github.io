@@ -34,14 +34,16 @@ body {
 @keyframes filter {
   50% {
     filter: grayscale(80%);
+    filter: sepia(50%);
   }
 
   100% {
     filter: grayscale(0%);
+    filter: sepia(0%);
   }
 }
 .Name {
-  text-shadow: 3px 3px #d48309;
+  text-shadow: 3px 3px #e64f09;
   margin-top: 5px;
   margin-top: auto;
   text-align: center;
