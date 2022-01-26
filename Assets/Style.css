@@ -3,7 +3,7 @@ body {
   background-size: 400% 700%;
   animation: gradient 6s ease infinite;
   font-family: "Ubuntu Condensed", sans-serif;
-  color: white;
+   color: white;
 }
 
 @keyframes gradient {
