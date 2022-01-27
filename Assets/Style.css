@@ -162,7 +162,11 @@ a {
 }
 
 .footer-text > a {
-  transition: 0.3s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.footer_links {
+  transition: 0.4s all ease-in-out;
 }
 
 .footer_links:hover  {
