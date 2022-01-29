@@ -2,7 +2,7 @@ body {
   background: linear-gradient(-45deg, #d64f19, #bd7313, #812819, #c70d26);
   background-size: 400% 700%;
   animation: gradient 6s ease infinite;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
    color: white;
 }
 
@@ -43,11 +43,13 @@ body {
   }
 }
 .Name {
+  font-family: 'Mochiy Pop P One', sans-serif;
   text-shadow: 3px 3px #e64f09;
   margin-top: 5px;
   margin-top: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
   animation: fall 3s ease infinite;
 }
 
@@ -97,9 +99,11 @@ body {
   margin-top: auto;
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .links div {
+  
   position: relative;
   display: block;
   margin-bottom: 25px;
@@ -131,7 +135,7 @@ a {
   text-decoration: none;
   color: white;
   text-align: center;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: 'Supermercado One', cursive;
   font-size: 20px;
 }
 
