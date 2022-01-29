@@ -187,6 +187,7 @@ footer > h5 {
   .links div {
     position: relative;
     display: block;
+    width: 290px;
     max-width: 95%;
     text-align: center;
   }
