@@ -49,7 +49,7 @@ body {
   margin-top: auto;
   text-align: center;
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   animation: fall 3s ease infinite;
 }
 
