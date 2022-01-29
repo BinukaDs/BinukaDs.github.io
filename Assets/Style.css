@@ -112,6 +112,7 @@ body {
   border: 2px solid white;
   border-radius: 40px;
   width: 500px;
+  max-width: 95%;
   transition: 0.3s all ease-in-out;
 }
 
@@ -182,7 +183,7 @@ footer > h5 {
   .links div {
     position: relative;
     display: block;
-    width: 290px;
+    max-width: 95%;
     text-align: center;
   }
 
