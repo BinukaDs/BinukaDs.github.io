@@ -50,10 +50,10 @@ body {
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
-  animation: fall 3s ease infinite;
+  /*animation: fall 3s ease infinite;*/
 }
 
-@keyframes fall {
+/*@keyframes fall {
   10% {
     transform: translateX(7px);
   }
@@ -93,7 +93,7 @@ body {
   100% {
     transform: translateX(0px);
   }
-}
+}*/
 
 .About {
   margin-top: auto;
