@@ -1,9 +1,24 @@
+:root {
+  --bg: rgb(34, 10, 2);
+  --about: rgb(214, 155, 13);
+}
+
+*{
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+  color: var(--about);
+}
+
 body {
-  background: linear-gradient(-45deg, #d64f19, #bd7313, #812819, #c70d26);
+  background-color: var(--bg);
   background-size: 400% 700%;
   animation: gradient 6s ease infinite;
-  font-family: 'Ubuntu Condensed', sans-serif;
-   color: white;
+  font-family:"ubuntu mono" ,'Itim', cursive;
+  color: white;
 }
 
 @keyframes gradient {
@@ -26,12 +41,12 @@ body {
   margin-right: auto;
   height: auto;
   width: 100px;
-  border: 5px solid white;
+  border: 4px solid var(--about);
   border-radius: 100%;
   animation: filter 3s ease infinite;
 }
 
-@keyframes filter {
+/*@keyframes filter {
   50% {
     filter: grayscale(80%);
     filter: sepia(50%);
@@ -41,14 +56,16 @@ body {
     filter: grayscale(0%);
     filter: sepia(0%);
   }
-}
+}*/
 .Name {
-  font-family: 'Mochiy Pop P One', sans-serif;
-  text-shadow: 3px 3px #e64f09;
+  font-family: 'Itim', cursive;
+  text-shadow: 4px 3px #000000;
+  color: var(--about);
   margin-top: 5px;
   margin-top: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 23px;
+  font-weight: bold;
   letter-spacing: 1px;
   /*animation: fall 3s ease infinite;*/
 }
@@ -57,71 +74,70 @@ body {
   10% {
     transform: translateX(7px);
   }
-
   20% {
     transform: translateX(-7px);
   }
-
   30% {
     transform: translateX(6px);
   }
-
   40% {
     transform: translateX(-6px);
   }
-
   50% {
     transform: translateX(5px);
   }
-
   60% {
     transform: translateX(-5px);
   }
-
   70% {
     transform: translateX(4px);
   }
-
   80% {
     transform: translateX(-4px);
   }
-
   90% {
     transform: translateX(0px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }*/
 
-.About {
+.About:read-only {
+  
   margin-top: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  color: var(--about);
   font-weight: bold;
 }
 
 .links div {
-  
+  cursor: pointer;
   position: relative;
   display: block;
   margin-bottom: 25px;
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
   letter-spacing: 2px;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid var(--about);
   border-radius: 40px;
   width: 500px;
   max-width: 95%;
   transition: 0.3s all ease-in-out;
 }
 
+.link {
+  color: var(--about);
+  top: auto;
+  bottom: auto;
+  text-align: center;
+}
+
 .links > div:hover {
-  background-color: white;
+  background-color: var(--about);
   transition: 0.5s all ease-in;
   color: black;
 }
@@ -131,21 +147,41 @@ body {
   transition: 0.5s all ease-in;
 }
 
+.links > div:hover #icons {
+  color: black;
+}
+
+footer {
+  color: var(--about);
+}
+
+footer a {
+  color: var(--about);
+}
+
+#footer_icons:hover {
+  color: var(--about);
+}
+
 a {
   text-decoration: none;
   color: white;
   text-align: center;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Itim', cursive;
+  font-weight: bold;
   font-size: 20px;
 }
 
 #icons {
   display: flex;
-  transform: translateY(20px) translateX(15px);
+  transform: translateY(15px) translateX(10px);
   padding-top: 0%;
 }
 
+
+
 .contact {
+  font-weight: 600;
   font-size: 13px;
   text-align-last: right;
 }
@@ -174,7 +210,7 @@ a {
   transition: 0.4s all ease-in-out;
 }
 
-.footer_links:hover  {
+.footer_links:hover {
   transition: 0.3s all ease-in;
   color: black;
 }
