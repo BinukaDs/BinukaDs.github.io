@@ -59,7 +59,7 @@ body {
 }*/
 .Name {
   font-family: "Itim", cursive;
-  text-shadow: 4px 3px #000000;
+  text-shadow: 3px 3px #651D17;
   color: var(--about);
   margin-top: 5px;
   margin-top: auto;
@@ -157,9 +157,6 @@ footer a {
   color: var(--about);
 }
 
-#footer_icons:hover {
-  color: var(--about);
-}
 
 a {
   text-decoration: none;
@@ -190,7 +187,7 @@ a {
 
 .contact a:hover {
   transition: 0.3s all ease-in-out;
-  color: black;
+  color: #651D17;
 }
 
 .footer-text {
@@ -208,7 +205,7 @@ a {
 
 .footer_links:hover {
   transition: 0.3s all ease-in;
-  color: black;
+  color: #651D17;
 }
 
 footer > h5 {
