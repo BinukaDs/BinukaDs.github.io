@@ -183,6 +183,9 @@ a {
     display: none;
   }
 
+.links > div.whatsapp_desktop {
+    display: block;
+}  
 .contact a {
   transition: 0.4s all ease-in;
   font-size: 17px;
