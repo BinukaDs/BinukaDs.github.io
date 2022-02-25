@@ -179,6 +179,10 @@ a {
   text-align-last: right;
 }
 
+.links > div.whatsapp_phone {
+    display: none;
+  }
+
 .contact a {
   transition: 0.4s all ease-in;
   font-size: 17px;
@@ -212,7 +216,7 @@ footer > h5 {
   text-align: center;
 }
 
-@media (max-width: 548px) {
+@media (max-width: 768px) {
   .links div {
     position: relative;
     display: block;
@@ -223,5 +227,13 @@ footer > h5 {
   footer > p.contact {
     position: relative;
     text-align-last: right;
+  }
+
+  .links > div.whatsapp_desktop {
+    display: none;
+  }
+
+  .links > div.whatsapp_phone {
+    display: block;
   }
 }
