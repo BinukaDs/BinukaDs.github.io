@@ -109,9 +109,15 @@ body {
   font-size: 20px;
   color: var(--about);
   font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   background-clip: text;
+   text-shadow: #651D17 3px 3px 1px;
 }
 
-.links div {
+
+
+.links .link {
   cursor: pointer;
   position: relative;
   display: block;
@@ -128,25 +134,27 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-.link {
+.links .link {
   color: var(--about);
   vertical-align: middle;
-  line-height: 40px;
+  line-height: 0px;
 }
 
-.links > div:hover {
+.links > .link:hover {
   background-color: var(--about);
   transition: 0.5s all ease-in;
+  border: 7px solid var(--about);
   color: black;
 }
 
-.links > div:hover a {
+.links > .link:hover p {
+  color: black;
+  transition: 0.3s all ease-in;
+}
+
+.links > .link:hover #icons {
   color: black;
   transition: 0.5s all ease-in;
-}
-
-.links > div:hover #icons {
-  color: black;
 }
 
 footer {
@@ -170,6 +178,7 @@ a {
 #icons {
   display: flex;
   transform: translateY(30px) translateX(20px);
+  transition: 0.3s all ease-in-out;
   padding-top: 0%;
 }
 
@@ -179,13 +188,14 @@ a {
   text-align-last: right;
 }
 
-.links > div.whatsapp_phone {
+.links > .link.whatsapp_phone {
     display: none;
   }
 
-.links > div.whatsapp_desktop {
+.links > .link.whatsapp_desktop {
     display: block;
 }  
+
 .contact a {
   transition: 0.4s all ease-in;
   font-size: 17px;
@@ -215,11 +225,20 @@ a {
   color: #651D17;
 }
 
+.contact:hover #footer_icons {
+  transition: 0.4s all ease-in;
+  color: #651D17;
+}
+
+#footer_icons {
+  transition: 0.3s all ease-in-out;
+}
+
 footer > h5 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 548px) {
   .links div {
     position: relative;
     display: block;
@@ -227,16 +246,22 @@ footer > h5 {
     text-align: center;
   }
 
+  .contact {
+    font-size: 11px;
+  }
+
   footer > p.contact {
     position: relative;
     text-align-last: right;
   }
 
-  .links > div.whatsapp_desktop {
+  .links > .link.whatsapp_desktop {
     display: none;
   }
 
-  .links > div.whatsapp_phone {
+  .links > .link.whatsapp_phone {
     display: block;
   }
+
+  
 }
