@@ -238,6 +238,25 @@ footer > h5 {
   text-align: center;
 }
 
+.contact .dropdown {
+  background-color: var(--bg);
+  border: 2px solid var(--about);
+  border-radius: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.contact .dropdown:hover {
+  background-color: var(--about);
+  color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+
+.contact .dropdown:hover option {
+  color: black;
+  border: 2px solid var(--bg);
+}
+
 @media (max-width: 548px) {
   .links div {
     position: relative;
