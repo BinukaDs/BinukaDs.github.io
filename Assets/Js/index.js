@@ -11,6 +11,7 @@ function select() {
 
         if (x.matches) {
             document.getElementById('button').href = 'https://api.whatsapp.com/send?phone=94755408993&text=Hi!%20This%20message%20is%20for%20build%20a%20website';
+            document.getElementById('whatsapp_desktop').href = 'https://api.whatsapp.com/send?phone=94755408993&text=Hi!%20This%20message%20is%20for%20build%20a%20website';
         }
     }
 
