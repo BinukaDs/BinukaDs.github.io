@@ -263,6 +263,10 @@ footer > h5 {
 }
 
 @media (max-width: 548px) {
+
+  .About {
+    text-align: center;
+  }
   .links div {
     position: relative;
     display: block;
@@ -276,7 +280,7 @@ footer > h5 {
 
   footer > p.contact {
     position: relative;
-    text-align-last: right;
+    text-align: center;
   }
 
   .links > .link.whatsapp_desktop {
