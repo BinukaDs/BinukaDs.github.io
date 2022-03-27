@@ -160,6 +160,7 @@ body {
 
 footer {
   color: var(--about);
+  
 }
 
 footer a {
@@ -186,7 +187,7 @@ a {
 .contact {
   font-weight: 600;
   font-size: 13px;
-  text-align-last: right;
+  text-align: center;
 }
 
 .links > .link.whatsapp_phone {
