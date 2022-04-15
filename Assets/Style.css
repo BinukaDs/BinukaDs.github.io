@@ -1,8 +1,9 @@
 :root {
-  --bg: #1a0202;
-  --about: #d69b0d;
+  --main: #181610;
+  --s_text: #838372;
+  --text: #2A2B27;
+  --info : #329325;
 }
-
 * {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -15,11 +16,15 @@
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--main);
   background-size: 400% 700%;
   animation: gradient 6s ease infinite;
   font-family: 'JetBrains Mono', monospace;
   color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh
+  
 }
 
 @keyframes gradient {
@@ -42,7 +47,7 @@ body {
   margin-right: auto;
   height: auto;
   width: 100px;
-  border: 4px solid var(--about);
+  border: 4px solid var(--info);
   border-radius: 100%;
   animation: filter 3s ease infinite;
 }
@@ -60,8 +65,8 @@ body {
 }*/
 .Name {
   font-family: 'JetBrains Mono', monospace;
-  text-shadow: 3px 3px #651D17;
-  color: var(--about);
+  
+  color: var(--info);
   margin-top: 5px;
   margin-top: auto;
   text-align: center;
@@ -108,12 +113,12 @@ body {
   margin-top: auto;
   text-align: center;
   font-size: 20px;
-  color: var(--about);
+  color: var(--info);
   font-weight: bold;
   -webkit-background-clip: text;
   -moz-background-clip: text;
    background-clip: text;
-   text-shadow: #651D17 3px 3px 1px;
+  
 }
 
 
@@ -123,48 +128,45 @@ body {
   position: relative;
   display: block;
   margin-bottom: 25px;
-  height: 75px;
+  height: 65px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 2px;
   text-align: center;
-  border: 2px solid var(--about);
-  border-radius: 40px;
-  width: 600px;
-  max-width: 95%;
+  border: 2px solid var(--info);
+  max-width: 75%;
   transition: 0.2s all ease-in-out;
 }
 
 .links .link {
-  color: var(--about);
+  color: var(--info);
   vertical-align: middle;
   line-height: 0px;
 }
 
 .links > .link:hover {
-  background-color: var(--about);
-  transition: 0.2s all ease-in;
-  border: 7px solid var(--about);
-  color: black;
+  padding: 10px;
+  border: 1px solid var(--s_text);
+  color: var(--s_text);
+  transition: 0.1s all ease-in;
+ 
 }
 
 .links > .link:hover p {
-  color: black;
-  transition: 0.3s all ease-in;
+  transition: 0.1s all ease-in;
 }
 
 .links > .link:hover #icons {
-  color: black;
-  transition: 0.5s all ease-in;
+  
+  transition: 0.1s all ease-in;
 }
 
 footer {
-  color: var(--about);
-  
+  color: var(--info);
 }
 
 footer a {
-  color: var(--about);
+  color: var(--info);
 }
 
 
@@ -180,14 +182,14 @@ a {
 #icons {
   display: flex;
   transform: translateY(30px) translateX(20px);
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   padding-top: 0%;
 }
 
 .contact {
   font-weight: 600;
   font-size: 13px;
-  text-align: center;
+  text-align-last: right;
 }
 
 .links > .link.whatsapp_phone {
@@ -206,7 +208,7 @@ a {
 
 .contact a:hover {
   transition: 0.3s all ease-in-out;
-  color: #651D17;
+  color: var(--s_text);
 }
 
 .footer-text {
@@ -224,12 +226,12 @@ a {
 
 .footer_links:hover {
   transition: 0.3s all ease-in;
-  color: #651D17;
+  color: var(--s_text);
 }
 
 .contact:hover #footer_icons {
   transition: 0.4s all ease-in;
-  color: #651D17;
+  color: var(--s_text);
 }
 
 #footer_icons {
@@ -241,8 +243,8 @@ footer > h5 {
 }
 
 .contact .dropdown {
-  background-color: var(--bg);
-  border: 2px solid var(--about);
+  background-color: var(--main);
+  border: 2px solid var(--info);
   border-radius: 20px;
   font-family: "ubuntu mono", "Itim", cursive;
   font-weight: bold;
@@ -266,8 +268,10 @@ footer > h5 {
 
   .About {
     text-align: center;
+    align-content: center;
     font-size: 16px;
   }
+
   .links div {
     position: relative;
     display: block;
@@ -291,6 +295,310 @@ footer > h5 {
   .links > .link.whatsapp_phone {
     display: block;
   }
+
+  
+
+  
+}
+:root {
+  --main: #181610;
+  --s_text: #838372;
+  --text: #2A2B27;
+  --info : #329325;
+}
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: var(--about);
+  
+}
+
+body {
+  background-color: var(--main);
+  background-size: 400% 700%;
+  animation: gradient 6s ease infinite;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh
+  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100px;
+  border: 4px solid var(--info);
+  border-radius: 100%;
+  animation: filter 3s ease infinite;
+}
+
+/*@keyframes filter {
+  50% {
+    filter: grayscale(80%);
+    filter: sepia(50%);
+  }
+
+  100% {
+    filter: grayscale(0%);
+    filter: sepia(0%);
+  }
+}*/
+.Name {
+  font-family: 'JetBrains Mono', monospace;
+  
+  color: var(--info);
+  margin-top: 5px;
+  margin-top: auto;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /*animation: fall 3s ease infinite;*/
+}
+
+/*@keyframes fall {
+  10% {
+    transform: translateX(7px);
+  }
+  20% {
+    transform: translateX(-7px);
+  }
+  30% {
+    transform: translateX(6px);
+  }
+  40% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  70% {
+    transform: translateX(4px);
+  }
+  80% {
+    transform: translateX(-4px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}*/
+
+.About {
+  margin-top: auto;
+  text-align: center;
+  font-size: 20px;
+  color: var(--info);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   background-clip: text;
+  
+}
+
+
+
+.links .link {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid var(--info);
+  max-width: 75%;
+  transition: 0.2s all ease-in-out;
+}
+
+.links .link {
+  color: var(--info);
+  vertical-align: middle;
+  line-height: 0px;
+}
+
+.links > .link:hover {
+  padding: 10px;
+  border: 1px solid var(--s_text);
+  color: var(--s_text);
+  transition: 0.1s all ease-in;
+ 
+}
+
+.links > .link:hover p {
+  transition: 0.1s all ease-in;
+}
+
+.links > .link:hover #icons {
+  
+  transition: 0.1s all ease-in;
+}
+
+footer {
+  color: var(--info);
+}
+
+footer a {
+  color: var(--info);
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#icons {
+  display: flex;
+  transform: translateY(30px) translateX(20px);
+  transition: 0.2s all ease-in-out;
+  padding-top: 0%;
+}
+
+.contact {
+  font-weight: 600;
+  font-size: 13px;
+  text-align-last: right;
+}
+
+.links > .link.whatsapp_phone {
+    display: none;
+  }
+
+.links > .link.whatsapp_desktop {
+    display: block;
+}  
+
+.contact a {
+  transition: 0.4s all ease-in;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.contact a:hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--s_text);
+}
+
+.footer-text {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footer-text > a {
+  transition: 0.4s all ease-in;
+}
+
+.footer_links {
+  transition: 0.4s all ease-in-out;
+}
+
+.footer_links:hover {
+  transition: 0.3s all ease-in;
+  color: var(--s_text);
+}
+
+.contact:hover #footer_icons {
+  transition: 0.4s all ease-in;
+  color: var(--s_text);
+}
+
+#footer_icons {
+  transition: 0.3s all ease-in-out;
+}
+
+footer > h5 {
+  text-align: center;
+}
+
+.contact .dropdown {
+  background-color: var(--main);
+  border: 2px solid var(--info);
+  border-radius: 20px;
+  font-family: "ubuntu mono", "Itim", cursive;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.contact .dropdown:hover {
+  background-color: var(--about);
+  color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+
+.contact .dropdown:hover option {
+  color: black;
+  border: 2px solid var(--bg);
+}
+
+@media (max-width: 548px) {
+
+  .About {
+    text-align: center;
+    align-content: center;
+    font-size: 16px;
+  }
+
+  .links div {
+    position: relative;
+    display: block;
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: 11px;
+  }
+
+  footer > p.contact {
+    position: relative;
+    text-align: center;
+  }
+
+  .links > .link.whatsapp_desktop {
+    display: none;
+  }
+
+  .links > .link.whatsapp_phone {
+    display: block;
+  }
+
+  
 
   
 }
