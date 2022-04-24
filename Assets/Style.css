@@ -45,10 +45,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
   height: auto;
   width: 100px;
-  border: 4px solid var(--info);
-  border-radius: 100%;
+  border: 2px solid var(--info);
+
   animation: filter 3s ease infinite;
 }
 
@@ -350,7 +352,7 @@ body {
   height: auto;
   width: 100px;
   border: 4px solid var(--info);
-  border-radius: 100%;
+  
   animation: filter 3s ease infinite;
 }
 
