@@ -1,0 +1,25 @@
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+.link {
+    width: 55%;
+}
+
+@media (max-width:548px) {
+    .link {
+        width: 95%;
+    }
+}
+
+#icons {
+    position: absolute;
+    display: block;
+    transform: translateY(15%);
+    @apply align-middle;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
